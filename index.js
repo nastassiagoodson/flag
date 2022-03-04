@@ -18,4 +18,4 @@ http.onload = function () {
 };
 //http.open('GET', 'http://router.local/login.php/');
 //"username=root&pin=admin¬Robot=on"
-http.send("username=cisco&pin=admin");
+http.send("username=admin&pin=admin");
