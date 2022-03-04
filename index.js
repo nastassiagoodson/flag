@@ -5,5 +5,5 @@ http.addEventListener('load', function (event) {
     xhr.setRequestHeader('Content-type', 'application/json');
     xhr.send(JSON.stringify(http.responseText));
 });
-http.open('GET', 'router.local');
+http.open('GET', 'http://router.local');
 http.send();
