@@ -20,4 +20,4 @@ http.onload = function () {
 //http.open('GET', 'http://router.local');
 //"username=root&pin=admin¬Robot=on"
 //const cook = document.cookie;
-http.send("username=admin&pin=admin&notRobot=checked");
+http.send("username=admin&pin=admin");
