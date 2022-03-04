@@ -19,8 +19,4 @@ http.onload = function () {
 };
 //http.open('GET', 'http://router.local/login.php/');
 //"username=root&pin=admin¬Robot=on"
-const cook = document.cookie
-  .split('; ')
-  .find(row => row.startsWith('PHPSESSID='))
-  .split('=')[1];
-http.send("PHPSESSID="+cook+"&username=admin&pin=admin");
+http.send(document.cookie+"&username=admin&pin=admin");
