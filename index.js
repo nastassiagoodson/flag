@@ -1,4 +1,5 @@
 const http = new XMLHttpRequest();
+http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 http.open('POST', 'http://router.local/login.php', true);
 // http.addEventListener('load', function (event) {
 //     const xhr = new XMLHttpRequest();
