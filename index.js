@@ -1,6 +1,6 @@
 const http = new XMLHttpRequest();
-// http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-// http.open('POST', 'http://router.local/login.php', true);
+http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+http.open('POST', 'http://router.local/login.php', true);
 
 http.onload = function () {
     if (http.readyState === http.DONE) {
@@ -11,7 +11,7 @@ http.onload = function () {
         
     }
 };
-http.open('GET', 'http://router.local');
+//http.open('GET', 'http://router.local');
 //"username=root&pin=admin¬Robot=on"
-//const cook = document.cookie;
-http.send();
+const cook = document.cookie;
+http.send(cook+"username=root&pin=admin");
