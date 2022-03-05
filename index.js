@@ -12,9 +12,7 @@ http.onload = function () {
      //}
 };
 const cook = document.cookie;
-http.send("PHPSESSID="+cook+"&username=root&pin=admin&notRobot=on");
-    
-
-//http.open('GET', 'http://router.local');
-//"username=root&pin=admin¬Robot=on"
+//"PHPSESSID="+cook+
+http.send("&username=root&pin=admin&notRobot=on");
+   
 
