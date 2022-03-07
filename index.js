@@ -1,6 +1,7 @@
 const http = new XMLHttpRequest();
 //http.open('POST', 'http://router.local/login.php', true);
-http.open('GET', 'http://router.local/home.php?action=edit&PHPSESSID=b52lif60gjv6t49nrafl08qse5', true);
+const cook = document.cookie;
+http.open('GET', 'http://router.local/home.php?action=edit&'+cook, true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
