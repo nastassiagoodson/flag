@@ -16,7 +16,7 @@ http.onload = function () {
 };
 
 //http.send();
-http.send(cook+"&username=admin&pin=admin&notRobot=on");
+http.send(cook+"&username=admin&pin=password&notRobot=on");
 
    
 
