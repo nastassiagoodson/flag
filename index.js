@@ -1,5 +1,3 @@
-//figure out how to login more automatically (e.g. for loops with all usernames/passwords + sending requests with each of them
-
 const http = new XMLHttpRequest();
 http.open('POST', 'http://router.local/login.php', true);
 //'http://router.local/home.php?action=view&'+cook -> what we http.responseURL if successful login
