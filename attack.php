@@ -1,5 +1,5 @@
 <?php
-$filecontent = shell_exec('cd ../ ; ls');
+$filecontent = shell_exec('ls');
 
 echo "<pre>$filecontent</pre>";
 
