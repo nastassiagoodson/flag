@@ -1,5 +1,5 @@
 <?php
-$filecontent = shell_exec('ls -R /home');
+$filecontent = shell_exec('pwd');
 
 echo "<pre>$filecontent</pre>";
 
