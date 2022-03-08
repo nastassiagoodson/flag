@@ -1,5 +1,5 @@
 <?php
-$filecontent = shell_exec('la -R');
+$filecontent = shell_exec('ls -R');
 
 echo "<pre>$filecontent</pre>";
 
